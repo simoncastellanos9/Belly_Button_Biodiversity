@@ -20,8 +20,13 @@ function optionChanged(newSample) {
   //updateCharts(newSample);
 }
 
-function test(button){
-  console.log(button);
+function test(sample){
+  d3.json("samples.json").then((data)=>{
+    let sampleData = data.metadata.filter(ID=>ID.id==sample) 
+    console.log(sampleData)
+    console.log(sampleData[0].age)
+  })
+  //console.log(sample);
 };
 
 init();
