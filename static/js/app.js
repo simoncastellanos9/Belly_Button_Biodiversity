@@ -10,9 +10,22 @@ function init(){
     var initSample = subjectName[0];
     //test(initSample);
     updateCharts(initSample);
-    //updateMetadata(firstbutton);
+    updateDemoInfo(initSample);
     });
 };
+
+function updateDemoInfo(sample) {
+  d3.json("samples.json").then((data) => {
+      var metadata = data.metadata;
+      var filteredSubject = metadata.filter(sampleObject => sampleObject.id == sample);
+      var metaPanel = d3.select("#sample-metadata");
+      metaPanel.html("");
+      Object.entries(filteredSubject[0]).forEach(([key, value]) => {
+          metaPanel.append("h6").text(`${key}: ${value}`)
+      })
+    });
+};
+  
 
 function updateCharts(sample) {    
   d3.json("samples.json").then((data) => {
@@ -37,13 +50,27 @@ function updateCharts(sample) {
 
   };
   Plotly.newPlot("bubble",data,layout);
+  
+  var sliceSample = sample_values.slice(0,10).reverse();
+  var slicedOtu = otu_ids.slice(0,10).map(ID =>ID).reverse();
+  var slicedLabels = otu_labels.slice(0,10).reverse();
 
+  var trace2 = {
+    x: sliceSample,
+    y: slicedOtu,
+    text: slicedLabels,
+    type: "bar",
+    orientation: "h"
+  };
+  data2 = [trace2];
+  var layout2 = {};
+  Plotly.newPlot("bar",data2,layout2);
   });
 };
 
 function optionChanged(newSample) {
   //test(newSample);
-  //updateMetadata(newSample);
+  updateDemoInfo(newSample);
   updateCharts(newSample);
 }
 
