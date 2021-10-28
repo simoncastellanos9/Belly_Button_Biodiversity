@@ -1,13 +1,18 @@
-# web-visualizations
-
 # Belly Button Biodiversity
 
-In this assignment, we built an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
+This website displays an interactive dashboard used to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
-The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. The exercise does the following
+The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare. 
 
-- Use the D3 library to read in samples.json
-- Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
-- Create a bubble chart that displays each sample.
-- Display the sample metadata, i.e., an individual's demographic information
-- Update all of the plots any time that a new sample is selected.
+- From the dropdown, select the test subject:
+
+<img src="C:\Users\simon_qba\web-visualizations\images\dropdown.PNG" alt="dropdown" style="zoom:50%;" />
+
+- This will update the demographic info, bar chart, bubble chart and gauge.
+
+  <img src="C:\Users\simon_qba\web-visualizations\images\bar.png" alt="bar" style="zoom:67%;" />
+
+<img src="C:\Users\simon_qba\web-visualizations\images\gauge.png" alt="gauge" style="zoom:50%;" />
+
+![bubble](C:\Users\simon_qba\web-visualizations\images\bubble.png)
+
