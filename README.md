@@ -6,13 +6,13 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 - From the dropdown, select the test subject:
 
-<img src="C:\Users\simon_qba\web-visualizations\images\dropdown.PNG" alt="dropdown" style="zoom:50%;" />
+<img src="https://github.com/simoncastellanos9/Belly_Button_Biodiversity/blob/main/images/dropdown.PNG?raw=true"/>
 
 - This will update the demographic info, bar chart, bubble chart and gauge.
 
-  <img src="C:\Users\simon_qba\web-visualizations\images\bar.png" alt="bar" style="zoom:67%;" />
+  <img src="https://github.com/simoncastellanos9/Belly_Button_Biodiversity/blob/main/images/bar.png?raw=true"/>
 
-<img src="C:\Users\simon_qba\web-visualizations\images\gauge.png" alt="gauge" style="zoom:50%;" />
+<img src="https://github.com/simoncastellanos9/Belly_Button_Biodiversity/blob/main/images/gauge.png?raw=true" style="zoom:50%;" />
 
-![bubble](C:\Users\simon_qba\web-visualizations\images\bubble.png)
+<img src="https://github.com/simoncastellanos9/Belly_Button_Biodiversity/blob/main/images/bubble.png?raw=true" style="zoom:50%;" />
 
